@@ -21,6 +21,7 @@ require "3-protect.php";
     echo "<br>";
     echo "<br>". 'Tjoho';
     echo $_SESSION["date"];
+    echo "Mongo Lloyd signing in";
     ?>
   </body>
 </html>
