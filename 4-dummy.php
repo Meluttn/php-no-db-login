@@ -19,7 +19,7 @@ require "3-protect.php";
     <?php echo "<br>";
     echo $_SESSION["user"];
     echo "<br>";
-    echo "<br>";
+    echo "<br>". 'Tjoho';
     echo $_SESSION["date"];
     ?>
   </body>
