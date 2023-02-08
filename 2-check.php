@@ -14,6 +14,7 @@ if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
   // (B2) CHECK & VERIFY
   if (isset($users[$_POST["user"]]) && $users[$_POST["user"]] == $_POST["password"]) {
     $_SESSION["user"] = $_POST["user"];
+    $_SESSION["date"] = date("Y-m-d H:i:s");
   }
 
   // (B3) FAILED LOGIN FLAG
@@ -23,5 +24,6 @@ if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
 // (C) REDIRECT TO HOME PAGE IF SIGNED IN - SET YOUR OWN !
 if (isset($_SESSION["user"])) {
   header("Location: 4-dummy.php");
+ 
   exit();
 }

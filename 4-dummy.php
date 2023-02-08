@@ -16,6 +16,11 @@ require "3-protect.php";
     </form>
 
     <!-- (B2) WHO IS THE CURRENT USER? -->
-    <?=$_SESSION["user"]?>
+    <?php echo "<br>";
+    echo $_SESSION["user"];
+    echo "<br>";
+    echo "<br>";
+    echo $_SESSION["date"];
+    ?>
   </body>
 </html>
